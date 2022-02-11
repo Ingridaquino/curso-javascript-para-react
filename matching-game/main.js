@@ -2,16 +2,15 @@ import "./src/styles/settings/colors.css";
 import './src/styles/gereric/reset.css';
 import './src/styles/elements/base.css';
 import BoardGame from "./src/objects/BoardGame";
-import PlayerName from "./src/components/PlayerName";
+import Scoreboard from "./src/objects/Scoreboard";
 
 const $root = document.querySelector("#root");
 
 $root.insertAdjacentHTML(
     "beforeend",
     `
-      ${PlayerName("Player1")}
-      ${PlayerName("Player2")}
-
+      ${Scoreboard()}
+     
       ${BoardGame(6)} 
     `
     //Definir quantas vezes repetir os cartões.
