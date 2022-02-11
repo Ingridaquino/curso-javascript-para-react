@@ -1,0 +1,5 @@
+.card-front-back{
+    position: relative; /*Para obedecer o pai*/ 
+    transform-style: preserve-3d;
+
+}
