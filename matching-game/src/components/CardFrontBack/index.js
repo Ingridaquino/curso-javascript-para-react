@@ -1,19 +1,27 @@
 import CardGame from "../CardGame";
 import './style.css';
 
+
+
 function CardFrontBack() {
-    return`
-        <article class="card-front-back">
-            <div class="card -front">
-                ${CardGame()}
-            </div>
-            <div class="card -back">
-                ${CardGame("Javascript", "Logo do Javascript")}
-            </div>    
-
-
-        </article>
+    window.cardFrontBack = {};
+    window.cardFrontBack.handleClick = (event) => {
+      const $origin = event.target; // a origin do click, qual card foi clicado;
+      const $cardFrontBack = $origin.closest('.card-front-back');
+  
+      $cardFrontBack.classList.toggle('-active'); // Toggle verifica sem têm a class ou não.
+    }
+  
+    return /*html*/ `
+      <article class="card-front-back" onClick="cardFrontBack.handleClick(event)">
+        <div class="card -front">
+          ${CardGame()}
+        </div>
+        <div class="card -back">
+          ${CardGame("javascript", "Logo do JavaScript")}
+        </div>
+      </article>
     `;
-}
-
-export default CardFrontBack;
+  }
+  
+  export default CardFrontBack;

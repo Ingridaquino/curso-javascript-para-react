@@ -11,7 +11,7 @@ $root.insertAdjacentHTML(
     `
       ${Scoreboard()}
      
-      ${BoardGame(2)} 
+      ${BoardGame(6)} 
     `
     //Definir quantas vezes repetir os cartões.
   );
