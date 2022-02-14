@@ -1,6 +1,13 @@
 
-export function AppPlayer() {
+export function PlayerScore(points = 0) {
     return `
-        <h1>Player</h1>
-    ` 
+      <ol data-points = "${points}">
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+      </ol>
+
+    `;
 }
+
+export default PlayerScore;
