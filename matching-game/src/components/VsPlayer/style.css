@@ -1,3 +1,4 @@
 .vs-player {
-    color: yellow;
+    color: var(--color-sandstorm);
+    font-size: .8rem;
 }
