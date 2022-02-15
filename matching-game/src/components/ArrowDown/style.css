@@ -1,0 +1,11 @@
+.arrow-down {
+    position: absolute;
+    top: 15px;
+    transform: translateX(-44px);
+    transition: transform 200ms ease-in-out; /*Ease-in-out começa lento, no meio mais rapido e no final mais lento*/
+}
+
+.arrow-down[data-currentPlayer="2"] {
+    transform: translateX(44px);
+
+}
